@@ -22,13 +22,13 @@ The goal of the game is to move as the most points out of the horizontal rows an
 
 
 SAMPLE SETUP:
-
+```
  P2  (6) (5) (4) (3) (2) (1)          <--- P2's guide row
 ---- 06  06  07  07  00  01 ----      <--- P2's slots
  01 ======================== 03       <--- store row
 ---- 00  06  01  01  01  08 ----      <--- P1's slots
      (1) (2) (3) (4) (5) (6) P1       <--- P1's guide row
 Player 2: What is your move?
-
+```
 It is Player 2's turn. P1 has 3 points, and P2 has 1 point.
 If P2 picks his 6th slot (which holds 6 points), it will increment his store and P1's 1st-5th slots. Alternatively, he can pick his 1st slot, which will move the single point over to the empty 2nd slot. This triggers a capture, which takes the just-placed point in P2's 2nd slot and all the points in P1's 5th slot, and places them in P2's store.
