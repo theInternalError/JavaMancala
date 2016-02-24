@@ -36,7 +36,7 @@ public class MancalaBoard {
 				board[i] = 0;
 			else
 				board[i] = 4;				
-			
+			i++;
 		}
 	}
 	
