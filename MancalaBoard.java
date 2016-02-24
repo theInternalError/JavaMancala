@@ -5,17 +5,17 @@
  * 
  * Space names:
  * 		  	B6 B5 B4 B3 B2 B1
- * 		PB				PA
+ * 		PB					   PA
  * 			A1 A2 A3 A4 A5 A6
  * 
  * Space numbers:
- * 		13 12 11 10  9  8
- * 	     14			    7
+ * 		  	13 12 11 10  9  8
+ * 		14					    7
  *  		 1  2  3  4  5  6
  * 
  * Space indexes:
- * 		12 11 10  9  8  7
- * 	     13			    6
+ * 		  	12 11 10  9  8  7
+ * 		13					    6
  *  		 0  1  2  3  4  5
  * 
  * @author Jacob Rardin/theInternalError
@@ -150,21 +150,31 @@ public class MancalaBoard {
 	 */
 	public void printBoard() {
 		int i;
+		// P2 help row
+				System.out.print(" P2  ");
+				for (i = 6; i > 0; i--)
+					System.out.print("(" + i + ") ");
+				System.out.println();
 		// top row
-		System.out.print("---- ");
+		System.out.print("----");
 		for (i = 12; i > 6; i--)
-			System.out.printf("%02d ", board[i]);
+			System.out.printf(" %02d ", board[i]);
 		System.out.println("----");
 		// middle row
 		System.out.printf(" %02d ", board[13]);
-		for (i = 0; i < 18; i++)
+		for (i = 0; i < 24; i++)
 			System.out.printf("=");
-		System.out.printf("  %02d\n", board[6]);
+		System.out.printf(" %02d\n", board[6]);
 		// bottom row
-		System.out.print("---- ");
+		System.out.print("----");
 		for(i = 0; i < 6; i++)
-			System.out.printf("%02d ", board[i]);
+			System.out.printf(" %02d ", board[i]);
 		System.out.println("----");
+		// P1 help row
+		System.out.print("     ");
+		for (i = 1; i < 7; i++)
+			System.out.print("(" + i + ") ");
+		System.out.println("P1");
 	}
 
 }

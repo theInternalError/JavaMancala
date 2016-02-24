@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Mancala {
 	
 	public static void main(String[] args){
-		System.out.println("Starting Mancala...");
 		// create the board
 		MancalaBoard board = new MancalaBoard();
 		
@@ -23,9 +22,8 @@ public class Mancala {
 			}
 			
 			// prompt player for input
-			System.out.println("Player " + side + "'s turn:");
 			board.printBoard();
-		    System.out.println("What is your move?");
+		    System.out.println("Player " + side + ": What is your move?");
 		    Scanner in = new Scanner(System.in);
 		    input = in.nextLine();
 			choice = Integer.parseInt(input);
